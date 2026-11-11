@@ -1,0 +1,40 @@
+PORTGUARD AI - MODEL EVALUATION
+================================
+
+Training records: 400
+Testing records: 100
+
+Accuracy: 0.8700
+Precision: 0.9028
+Recall: 0.9155
+F1 Score: 0.9091
+ROC-AUC: 0.9267
+
+Classification Report:
+               precision    recall  f1-score   support
+
+No Congestion       0.79      0.76      0.77        29
+   Congestion       0.90      0.92      0.91        71
+
+     accuracy                           0.87       100
+    macro avg       0.84      0.84      0.84       100
+ weighted avg       0.87      0.87      0.87       100
+
+Confusion Matrix:
+[[22  7]
+ [ 6 65]]
+
+Feature Importance:
+                             feature  importance
+             numerical__queue_length    0.339901
+          numerical__vessel_arrivals    0.221932
+     numerical__historical_avg_delay    0.142772
+         numerical__weather_severity    0.105171
+              numerical__hour_of_day    0.067481
+                    numerical__month    0.049018
+            numerical__port_capacity    0.033975
+       categorical__port_name_Mumbai    0.012408
+       categorical__port_name_Cochin    0.009035
+      categorical__port_name_Kolkata    0.006622
+      categorical__port_name_Chennai    0.006432
+categorical__port_name_Visakhapatnam    0.005252
